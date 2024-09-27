@@ -1,33 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Signature Generator</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <div class="form-container">
-            <h2>Enter Your Information</h2>
-            <form id="signatureForm">
-                <input type="text" id="fullName" placeholder="Full Name" required>
-                <input type="text" id="pronouns" placeholder="Pronouns (e.g., he/him/his)">
-                <input type="text" id="jobTitle" placeholder="Job Title" required>
-                <input type="email" id="email" placeholder="Email" required>
-                <input type="tel" id="phone" placeholder="Phone Number">
-                <input type="url" id="website" placeholder="Website">
-                <input type="file" id="profilePic" accept="image/*">
-                <button type="submit">Generate Signature</button>
-            </form>
-        </div>
-        <div class="preview-container">
-            <h2>Signature Preview</h2>
-            <div id="signaturePreview" class="email-signature">
-                <!-- Preview will be generated here -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Email Signature Generator</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-container">
+                <h2>Enter Your Information</h2>
+                <form id="signatureForm">
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="Full Name"
+                        required
+                    />
+                    <input
+                        type="text"
+                        id="pronouns"
+                        placeholder="Pronouns (e.g., he/him/his)"
+                    />
+                    <input
+                        type="text"
+                        id="jobTitle"
+                        placeholder="Job Title"
+                        required
+                    />
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email"
+                        required
+                    />
+                    <input type="tel" id="phone" placeholder="Phone Number" />
+                    <input type="url" id="website" placeholder="Website" />
+                    <input type="file" id="profilePic" accept="image/*" />
+                    <button type="submit">Generate Signature</button>
+                </form>
+            </div>
+            <div class="preview-container">
+                <h2>Signature Preview</h2>
+                <div id="signaturePreview" class="email-signature">
+                    <!-- Preview will be generated here -->
+                </div>
+                <button id="downloadBtn">Download Signature HTML</button>
             </div>
         </div>
-    </div>
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
